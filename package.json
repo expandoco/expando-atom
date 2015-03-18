@@ -1,0 +1,17 @@
+{
+  "name": "expando-atom",
+  "main": "./lib/expando",
+  "version": "0.0.1",
+  "description": "Instant data snippets",
+  "activationCommands": {
+    "atom-workspace": "expando:expand"
+  },
+  "repository": "https://github.com/expandoco/expando-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+   "expando-core": "0.0.1"
+   }
+}
