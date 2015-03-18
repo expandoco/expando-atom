@@ -1,7 +1,7 @@
 {
   "name": "expando-atom",
   "main": "./lib/expando",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Instant data snippets",
   "activationCommands": {
     "atom-workspace": "expando:expand"
@@ -12,6 +12,6 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
-   "expando-core": "0.0.1"
-   }
+    "expando-core": "0.0.1"
+  }
 }
