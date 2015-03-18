@@ -1,7 +1,7 @@
 {
   "name": "expando-atom",
   "main": "./lib/expando",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Instant data snippets",
   "activationCommands": {
     "atom-workspace": "expando:expand"
