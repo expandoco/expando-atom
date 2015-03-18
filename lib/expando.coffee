@@ -21,7 +21,7 @@ module.exports =
     expando = require 'expando-core'
 
     output = expando.transform selection.getText()
-
+    nullGrammar = atom.grammars.selectGrammar("text.plain.null-grammar")
     grammars = atom.grammars.getGrammars().filter (grammar) ->
       grammar isnt atom.grammars.nullGrammar
 
