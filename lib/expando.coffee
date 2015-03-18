@@ -34,6 +34,7 @@ module.exports =
     selection.insertText(output.body)
     atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
     editor.setGrammar(grammar)
+    editor.moveCursorToBeginningOfLine()
     #atom.commands.dispatch(command)
 
   expandBeautify: ->
