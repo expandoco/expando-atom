@@ -18,7 +18,7 @@ module.exports =
     editor.selectToBeginningOfLine()
 
     selection = editor.getSelection()
-    expando = require 'expando'
+    expando = require 'expando-core'
 
     output = expando.transform selection.getText()
 
