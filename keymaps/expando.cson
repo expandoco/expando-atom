@@ -8,4 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-workspace':
-  'ctrl-`': 'expando:expand'
+  'shift-enter': 'expando:expand'
+  'ctrl-`': 'expando:expand-beautify'
