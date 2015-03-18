@@ -9,7 +9,9 @@ apm install expando-atom
 ```
 
 ### Basic usage
-Type Expando syntax and then run the `Expando: Expand` command or press `SHIFT+ENTER`. Use CTRL+` for expand-and-beautify combination.
+Type Expando syntax and then run the `Expando: Expand` command or press `SHIFT+ENTER`. Use CTRL+` for expand-and-beautify combination*.
+
+> Note: The expand-and-beautify feature is dependent on `atom-beautify` and is only available if you have this package installed.
 
 The following basic types are supported:
 * `string` random string value
