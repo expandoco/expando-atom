@@ -31,7 +31,7 @@ module.exports =
 
     selection.insertText(output.body)
 
-    if grammar is not null
+    if grammar is not undefined
       atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
       editor.setGrammar(grammar)
     editor.moveCursorToBeginningOfLine()
