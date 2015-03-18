@@ -31,10 +31,9 @@ module.exports =
 
     selection.insertText(output.body)
 
-    #if grammar is null
-
-    #atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
-    editor.setGrammar(grammar)
+    if grammar is not null
+      atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
+      editor.setGrammar(grammar)
     editor.moveCursorToBeginningOfLine()
     #atom.commands.dispatch(command)
 
