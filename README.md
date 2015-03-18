@@ -9,6 +9,8 @@ apm install expando-atom
 ```
 
 ### Basic usage
+Type Expando syntax and then run the `Expando: Expand` command or press `SHIFT+ENTER`. Use CTRL+` for expand-and-beautify combination.
+
 The following basic types are supported:
 * `string` random string value
 * `int` random integer number
