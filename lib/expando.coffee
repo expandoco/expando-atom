@@ -29,10 +29,11 @@ module.exports =
     filteredGrammars = (item for item in grammars when (output.header.generator in item.fileTypes))
     grammar = filteredGrammars[0]
 
-    #json = JSON.stringify(JSON.parse(output.body), null, '\t');
-    #console.log(output)
     selection.insertText(output.body)
-    atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
+
+    #if grammar is null
+
+    #atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
     editor.setGrammar(grammar)
     editor.moveCursorToBeginningOfLine()
     #atom.commands.dispatch(command)
