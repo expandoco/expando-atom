@@ -40,4 +40,4 @@ module.exports =
   expandBeautify: ->
     @expand()
     editorElement = atom.views.getView(atom.workspace.getActiveTextEditor())
-    atom.commands.dispatch(editorElement, 'beautify:beautify-editor')
+    atom.commands.dispatch(editorElement, 'atom-beautify:beautify-editor')
