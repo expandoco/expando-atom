@@ -17,7 +17,7 @@ module.exports =
 
     editor.selectToBeginningOfLine()
 
-    selection = editor.getSelection()
+    selection = editor.getLastSelection()
     expando = require 'expando-core'
 
     output = expando.transform selection.getText()
@@ -34,7 +34,7 @@ module.exports =
     if grammar isnt undefined and grammar isnt nullGrammar
       atom.grammars.setGrammarOverrideForPath(editor.getPath(), grammar.scopeName)
       editor.setGrammar(grammar)
-    editor.moveCursorToBeginningOfLine()
+    editor.moveToBeginningOfLine()
     #atom.commands.dispatch(command)
 
   expandBeautify: ->
